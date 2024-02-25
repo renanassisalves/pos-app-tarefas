@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "1013405549637",
+    "firebase_url": "https://entregas-pos-default-rtdb.firebaseio.com",
+    "project_id": "entregas-pos",
+    "storage_bucket": "entregas-pos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013405549637:android:766468ac3f21b54e854f2c",
+        "android_client_info": {
+          "package_name": "com.renanassisalves.entrega2.entrega_flutter_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013405549637-nqu27nl513laspvgb8hgtjjqm4nluvso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6aoDmlj7x3dVckaLDq9IY05cg5XV5XB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013405549637-krq3hqkck4lpger72lt3sjoj5gckopk6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1013405549637-p6b1vcamr6opd2k7p824jq0ml4oqs1vr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.renanassisalves.entrega2.entregaFlutter2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013405549637:android:099ced0b9fdc76b0854f2c",
+        "android_client_info": {
+          "package_name": "com.renandeassisalves.apptarefas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013405549637-2ohqtk8krmqfgmeelb1eosidvh902ngn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.renandeassisalves.apptarefas",
+            "certificate_hash": "15757c5a0bb41e095113dddc65cc1f77eb9be8e3"
+          }
+        },
+        {
+          "client_id": "1013405549637-nqu27nl513laspvgb8hgtjjqm4nluvso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6aoDmlj7x3dVckaLDq9IY05cg5XV5XB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013405549637-krq3hqkck4lpger72lt3sjoj5gckopk6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1013405549637-p6b1vcamr6opd2k7p824jq0ml4oqs1vr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.renanassisalves.entrega2.entregaFlutter2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

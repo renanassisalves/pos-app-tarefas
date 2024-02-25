@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.AppTarefas" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="colorPrimary">@color/PrimariaLight</item>
+        <item name="colorSecondary">@color/SecundariaLight</item>
+    </style>
+
+    <style name="Theme.AppTarefas" parent="Base.Theme.AppTarefas" />
+</resources>

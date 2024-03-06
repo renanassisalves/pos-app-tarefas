@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">App Tarefas</string>
+    <string name="googleClientID">1013405549637-nqu27nl513laspvgb8hgtjjqm4nluvso.apps.googleusercontent.com</string>
+    <string name="criar_nova_tarefa">Criar nova tarefa</string>
+    <string name="titulo_da_tarefa">Titulo da tarefa</string>
+    <string name="descri_o_da_tarefa">Descrição da tarefa</string>
+    <string name="data_e_hora_da_tarefa">Data e hora da tarefa</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="fazer_login">Fazer Login</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">LOGIN</string>
+    <string name="criar_conta">CRIAR CONTA</string>
+    <string name="ou_entre_utilizando">Ou entre utilizando</string>
+    <string name="usuario">usuario</string>
+    <string name="logout">Logout</string>
+    <string name="sair">Sair</string>
+    <string name="alternar_modo_noturno">Alternar modo noturno</string>
+    <string name="titulo">Titulo</string>
+    <string name="descricao">Descricao</string>
+    <string name="data">Data</string>
+    <string name="editar_tarefa">Editar Tarefa</string>
+    <string name="salvar">Salvar</string>
 </resources>

@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,19 +17,29 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:textSize="24sp"
-            android:text="usuario"
+            android:text="@string/usuario"
             android:layout_gravity="start"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/SecundariaLight"
+            android:layout_gravity="end"
+            app:cardCornerRadius="15dp"
+            android:layout_marginEnd="10dp">
         <ImageButton
             android:id="@+id/btnSair"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:padding="7dp"
+            android:layout_margin="3dp"
             android:src="@drawable/ic_logout"
             android:scaleType="fitCenter"
-            android:layout_gravity="end"
-            android:contentDescription="Logout"
+            android:contentDescription="@string/logout"
             android:background="@color/SecundariaLight"
-            android:layout_marginEnd="10dp"
             />
+        </androidx.cardview.widget.CardView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,16 +47,39 @@
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:layout_margin="10dp"
-            android:text="Sair"/>
+            android:text="@string/sair"/>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchNoturno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/switchNoturno"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/switchNoturno"
+        android:layout_alignTop="@id/switchNoturno"
+        android:gravity="center"
+        android:text="@string/alternar_modo_noturno"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerTarefas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:padding="8dp"/>
+        android:layout_below="@id/switchNoturno"
+        android:padding="8dp"
+        tools:listitem="@layout/item_tarefa"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAdd"
@@ -56,6 +90,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/PrimariaLight"
         android:src="@drawable/ic_add"
         app:fabSize="normal" />
 

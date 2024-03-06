@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="?attr/colorSecondary"
+    app:cardCornerRadius="10dp">
+<RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Titulo" />
+        android:text="@string/titulo"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textViewDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Descricao" />
+        android:layout_below="@id/textViewTitulo"
+        android:text="@string/descricao"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textViewData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Data" />
-</LinearLayout>
+        android:layout_below="@id/textViewDescricao"
+        android:text="@string/data"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,6 +1,9 @@
 package com.renandeassisalves.apptarefas.Utils
 
 import android.content.Context
+import android.content.SharedPreferences
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -39,8 +42,20 @@ class FirebaseAuthManager(private val context: Context) {
             }
     }
 
-    fun sair(listener: AuthListener) {
-        firebaseAuth.signOut()
-        listener.onSignOutSuccess()
+    companion object {
+        fun deslogar(context: Context) {
+            var sharedPreferences : SharedPreferences = context.getSharedPreferences("authTokens", Context.MODE_PRIVATE)
+            sharedPreferences.edit().remove("idToken").apply()
+
+            if (GoogleSignIn.getLastSignedInAccount(context) != null) {
+                val gso =
+                    GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
+                val gsc = GoogleSignIn.getClient(context, gso!!)
+                gsc.signOut()
+            } else {
+                val firebaseAuth = FirebaseAuth.getInstance()
+                firebaseAuth.signOut()
+            }
+        }
     }
 }

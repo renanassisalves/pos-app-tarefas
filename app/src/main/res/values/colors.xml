@@ -3,7 +3,9 @@
     <color name="dark">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="PrimariaLight">#FF9F11</color>
-    <color name="SecundariaLight">#D56809</color>
-    <color name="PrimariaDark">#000000</color>
-    <color name="SecundariaDark">#FF8401</color>
+    <color name="SecundariaLight">#FFCB63</color>
+    <color name="PrimariaDark">#DC8A11</color>
+    <color name="SecundariaDark">#7E5313</color>
+    <color name="redDanger">#C11111</color>
+    <color name="redDangerBack">#FF6363</color>
 </resources>

@@ -16,9 +16,9 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
-        android:text="Fazer Login"
+        android:text="@string/fazer_login"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <EditText
@@ -31,7 +31,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:hint="Email"
+        android:hint="@string/email"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -46,7 +46,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="@color/white"
@@ -72,7 +72,7 @@
         android:layout_marginBottom="20dp"
         android:textSize="18sp"
         android:backgroundTint="@color/PrimariaLight"
-        android:text="LOGIN" />
+        android:text="@string/login" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCadastrar"
@@ -86,7 +86,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:backgroundTint="@color/PrimariaLight"
-            android:text="CRIAR CONTA" />
+            android:text="@string/criar_conta" />
 
     </LinearLayout>
 
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/outros"
         android:layout_above="@id/redesSociais"
-        android:text="Ou entre utilizando"
+        android:text="@string/ou_entre_utilizando"
         android:layout_centerHorizontal="true"/>
 
     <LinearLayout

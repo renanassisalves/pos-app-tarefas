@@ -5,7 +5,7 @@ Aplicativo para registro de tarefas a serem realizadas em uma determinada data.
 
 - Kotlin
 - Login com o Firebase e Google Auth
-- Firebase Realtime Database
+- Persistência online com Firebase Realtime Database
 - Persistência local com SharedPreferences
 - Interface por design XML
 
